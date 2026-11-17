@@ -1,9 +1,5 @@
 """Leakage-safe LightGBM training core for jaw cystic lesion classification.
 
-This module is a drop-in replacement for the original training function. It
-keeps the original result schema while moving preprocessing, feature selection,
-and hyperparameter tuning inside cross-validation.
-
 Scope: pooled out-of-fold development-cohort evaluation. An independent test
 set must remain outside this function and must not be used for model selection.
 """
